@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.60046 -->
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainer1133").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator1133"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>
+
+.art-slidecontainer1133 {
+    position: relative;
+        width: 862px;
+    height: 646px;
+        }
+
+.art-slidecontainer1133 .art-slide-item
+{
+
+}
+
+
+
+.art-slidecontainer1133 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainer1133 .active, .art-slidecontainer1133 .next, .art-slidecontainer1133 .prev {
+    display: block;
+}
+
+.art-slidecontainer1133 .active {
+    opacity: 1;
+}
+
+.art-slidecontainer1133 .next, .art-slidecontainer1133 .prev {
+    width: 100%;
+}
+
+.art-slidecontainer1133 .next.forward, .art-slidecontainer1133 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainer1133 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainer1133 .active.back {
+    opacity: 0;
+}
+
+
+.art-slide11330 {
+    background-image:  url('images/slide11330.png');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slide11331 {
+    background-image:  url('images/slide11331.png');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slide11332 {
+    background-image:  url('images/slide11332.png');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigator1133 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 622px;
+  left: 92.58%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigator1133
+{
+background: #8C8C8C;background: linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(178, 178, 178, 0.6) 0, rgba(128, 128, 128, 0.6) 67%, rgba(102, 102, 102, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigator1133 > a
+{
+background: #4F4F4F;background: #4F4F4F;background: #4F4F4F;background: #4F4F4F;background: #4F4F4F;background: #4F4F4F;background: #4F4F4F;-svg-background: #4F4F4F;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator1133 > a.active
+{
+background: #C81E5F;background: #C81E5F;background: #C81E5F;background: #C81E5F;background: #C81E5F;background: #C81E5F;background: #C81E5F;-svg-background: #C81E5F;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator1133 > a:hover
+{
+background: #737373;background: #737373;background: #737373;background: #737373;background: #737373;background: #737373;background: #737373;-svg-background: #737373;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div id="art-header-bg">
+            </div>
+    <div id="art-hmenu-bg" class="art-bar art-nav">
+    </div>
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+
+<h1 class="art-headline" data-left="55.36%">
+    <a href="#">COMMERCIAL BROKERGE</a>
+</h1>
+<h2 class="art-slogan" data-left="47.02%">MEHDI MOHAMMADI</h2>
+
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="home.html" class="">Home</a></li><li><a href="about-us.html" class="">ABOUT US</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contacts.html">Contacts</a></li></ul> 
+        </div>
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <div class="art-postmetadataheader">
+                                        <h2 class="art-postheader"><span class="art-postheadericon">Gallery</span></h2>
+                                                            
+                                    </div>
+                                <div class="art-postcontent art-postcontent-0 clearfix"><p><br></p><p style="text-align: justify;"></p><div id="1133" style="position: relative; display: inline-block; z-index: 0; margin: 7px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainer1133" data-width="862" data-height="646">
+    <div class="art-slider-inner">
+<a class="art-slide-item art-slide11330" >
+
+</a>
+<a class="art-slide-item art-slide11331" >
+
+</a>
+<a class="art-slide-item art-slide11332" >
+
+</a>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator1133" data-left="92.58">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+<p style="text-align: justify;"><br></p><p style="text-align: justify;"><img width="862" height="433" alt="" class="art-lightbox" src="images/qjki5X4LDA1e.jpg"><br></p><p style="text-align: justify;"><img width="863" height="640" alt="" class="art-lightbox" src="images/C00A2064.jpg"><br></p><p style="text-align: justify;"><span style="color: rgb(64, 64, 64); font-size: 20px;"><br></span></p><p><br></p><p><br></p></div>
+                                
+                
+
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%">
+        <div style="border-top:1px solid #dedede; width: 100%"><br>
+         © 2020-2021 - Dubai&nbsp;</div><div style="border-top:1px solid #dedede; width: 100%"><br></div>
+    </div>
+    </div>
+</div>
+
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
